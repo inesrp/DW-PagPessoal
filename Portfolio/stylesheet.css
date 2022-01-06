@@ -1,0 +1,15 @@
+a-scene {
+    z-index: -1;
+    pointer-events: none;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 300%;
+}
+
+/* sem ser pc */
+@media only screen and (max-width: 1050px) {
+    a-scene {
+        display: none;
+    }
+}

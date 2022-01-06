@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>My Portfolio</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Encode+Sans">
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <!-- Alforrecas -->
+  <img alt="alforreca1" src="imgs/jelly fish4.png" class="imgfundo if1 rellax" data-rellax-speed="8">
+  <img alt="alforreca2" src="imgs/jelly fish2.1.png" class="imgfundo if2 rellax" data-rellax-speed="1">
+  <img alt="alforreca3" src="imgs/jelly fish2.2.png" class="imgfundo if3 rellax" data-rellax-speed="1">
+  <img alt="alforreca4" src="imgs/jelly fish3.png" class="imgfundo if4 rellax" data-rellax-speed="4">
+
+  <!-- Smoke -->
+  <img alt="smoke1" src="imgs/[CITYPNG.COM]Purple Color Colored Smoke Effect - 1000x1000.png" class="smoke i1 rellax"
+    data-rellax-speed="-3">
+  <img alt="smoke2" src="imgs/pinksmoke.png" class="smoke i2 rellax" data-rellax-speed="-8">
+  <img alt="smoke3" src="imgs/snmoketi.png" class="smoke i3 rellax" data-rellax-speed="-8">
+  <img alt="smoke4" src="imgs/28e9fb1c52402ffdc3a397c8dc4c9057.png" class="smoke i4 rellax" data-rellax-speed="-4">
+
+
+  <main>
+    <!-- CENA 3D para o SMOKE e o ESPAÇO -->
+    <div id="3dscene">
+      <a-scene embedded vr-mode-ui="enabled:false">
+        <!-- assets modelos 3D -->
+        <a-asset-item id="fumo"
+          src="https://raw.githubusercontent.com/inesrp/DW-Models/main/star_cluster_-_15k_stars_model/scene.gltf">
+        </a-asset-item>
+
+        <a-asset-item id="stars2" src="https://raw.githubusercontent.com/inesrp/DW-Models/main/119613_stars/scene.gltf">
+        </a-asset-item>
+
+
+        <a-gltf-model class="star2" position="0 0 0" scale="0.04 0.04 0.04" rotation="0 0 0" src="#stars2"
+          data-rellax-speed="-20">
+        </a-gltf-model>
+
+
+
+        <a-camera wasd-controls-enabled="false">
+        </a-camera>
+
+      </a-scene>
+    </div>
+
+    <div class="grid-container">
+      <div class="presentation item item1">
+        <img src="imgs/self portrait.png">
+        <div class="info">
+          <p>
+            Hello! My name is Inês and I'm currently taking my master's degree in "Design and Multimedia" in
+            Coimbra.
+          </p>
+          <p>
+            Here are some of my projects. Enjoy!
+          </p>
+
+          <div>
+            <span>
+              Inês Pinto
+            </span>
+
+            <span>
+              Design
+            </span>
+
+            <span>
+              Illustration
+            </span>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <a href="https://www.behance.net/gallery/112711867/The-day-after-the-quarantine-Animation" target="_blank" class="hoverpt">
+        <span class="ponto p1"></span>
+        <div class="right item item2 col1">
+          <h4>
+            The day after the quarantine
+          </h4>
+          <p>
+            A small animation that shows the fears and paranoias towards spreading disease.
+          </p>
+        </div>
+      </a>
+
+
+      <a href="https://www.behance.net/gallery/123568553/Hortusio-%28mobile-app%29" target="_blank" class="hoverpt">
+        <span class="ponto p2"></span>
+        <div class="left item item3 col1">
+          <h4>
+            Hortus.io
+          </h4>
+          <p>
+            Take care of a virtual garden by taking care of yourself.
+          </p>
+        </div>
+      </a>
+
+
+      <a href="https://www.behance.net/gallery/123384803/In-Sync" target="_blank" class="hoverpt">
+        <span class="ponto p3"></span>
+        <div class="right item item4 col1">
+          <h4>
+            In Sync
+          </h4>
+          <p>
+            A program that generates art with your heartbeat and the emotion you're feeling at the
+            moment.
+          </p>
+        </div>
+      </a>
+
+      <a href="https://www.behance.net/gallery/123259901/The-Vulture-%28Animation%29" target="_blank" class="hoverpt">
+        <span class="ponto p4"></span>
+        <div class="left item item5 col1">
+          <h4>
+            The Vulture
+          </h4>
+          <p>
+            A small animation based on Franz Kafka's short story: "The Vulture".
+          </p>
+
+        </div>
+      </a>
+      <div class="item6 item"></div>
+      <div class="item7 item"></div>
+      <div class="item8 item"></div>
+      <div class="item9 item"></div>
+      <div class="item10 item"></div>
+
+
+
+    </div>
+  </main>
+
+  <footer>
+    <h4> More projects on:</h4>
+    <a target="_blank" href="https://www.behance.net/inesrp20083012">be.net/inesrp20083012</a>
+    <a target="_blank" href="https://www.instagram.com/mininyx_art/"> @mininyx_art</a>
+
+  </footer>
+  <script>
+    if(innerWidth>1024){
+    const scrollContainer = document.querySelector('body');
+    
+    scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    window.scrollTo(window.scrollX + evt.deltaY, 0);
+  //  scrollContainer.scrollLeft += evt.deltaY;
+});
+window.onresize = function(){ location.reload(); }
+}
+   
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.js"
+    integrity="sha512-qk0XupXlge1h9I63+bC7K8850xgWnUjTgSNkfLnsqc7dWdx4031UbKjKs2cuRxsNXymkSjyzSCiryVouU74zkg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    var rellax = new Rellax('.rellax', {
+      horizontal: true,
+      vertical: false
+    });
+  </script>
+
+ 
+  <script src="animacoes3d.js"> </script>
+
+
+
+</body>
+
+</html>
